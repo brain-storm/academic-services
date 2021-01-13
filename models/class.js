@@ -25,8 +25,11 @@ const classSchema = new Schema({
     /*
     *cross referencing is yet to be done.
     * ex : 
-        * type : mongoose.Schema.Types.ObjectId,
-                    ref : 'School'
+        userSchema.virtual('tasks', {
+            ref : 'Task',
+            localField : '_id',
+            foreignField : 'owner'
+        })
     */
 })
     
