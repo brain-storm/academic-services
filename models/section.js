@@ -6,12 +6,12 @@ const sectionSchema = new Schema({
         type : String,
         required: true
     },
-    classID : {
+    classId : {
         required : false,
         type : mongoose.Schema.Types.ObjectId,
         ref  : 'Class'
     },
-    sectionHead : {
+    sectionIncharge : {
         required:false,
         type : mongoose.Schema.Types.ObjectId,
         ref : 'Teacher'

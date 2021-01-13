@@ -7,7 +7,7 @@ const classSchema = new Schema({
         required: true
     },
     // Important : I have made these attributes non-required only for the time being!
-    incharge:{      // head teacher of all the sections of the class
+    classIncharge:{      // head teacher of all the sections of the class
         required : false,
         type: mongoose.Schema.Types.ObjectId,
         ref : 'Teacher'
