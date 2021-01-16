@@ -36,13 +36,3 @@ const classSchema = new Schema({
 const Class = mongoose.model('Class' , classSchema);
 
 module.exports = Class;
-
-/*
-To be added
-All of these will reference the subject :-
-quiz
-response
-assignment
-response
-material
-*/ 
